@@ -1,0 +1,99 @@
+
+
+header {
+    position: fixed; /* O 'fixed' si quieres que se mantenga visible al hacer scroll */
+    top: 0;
+    left: 0;
+    
+    /* Estilos adicionales para visualización */
+    background:linear-gradient(90deg,var(--primary),indigo);color:#fff;
+    color: white;
+    width: 100%; /* Opcional: para que ocupe todo el ancho si es necesario */
+    box-sizing: border-box;
+    box-shadow:0 6px 18px rgba(108,99,255,0.12);
+}
+
+.site-header nav a{
+    color:rgba(255,255,255,0.95);
+    text-decoration:none;
+    margin-left:12px;
+    font-weight:600
+}
+.site-header nav a:hover{
+    opacity:0.9;
+    text-decoration:underline
+}
+
+.header-row {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    margin-left: 2rem;
+}
+
+.header-left, .header-right, .header-right #guestMenu {
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.site-header .brand {
+    font-weight:700;
+    color:#ffffff;
+    text-decoration:none;
+    font-size:18px;
+}
+  
+.site-header nav a, .nav-link {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-weight: 500;
+      margin-right: 16px; /* Add margin to create space between links */
+}
+
+.site-header nav a:hover, .nav-link:hover {
+    color:#fff;
+}
+
+.btn-student {
+    background:#ffffff;
+    color:#000000;
+    padding:8px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-student:hover {
+    background: #ffffff;
+    color: #9d0e02;
+}
+
+.btn-student svg {
+    margin-bottom: -2px; /* Visual alignment */
+}
+
+.btn-company {
+    background:#ffffff;
+    color:#000000;
+    padding:8px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-company:hover {
+    background: #ffffff;
+    color: indigo;
+}
+
+.btn-company svg {
+    margin-bottom: -2px; /* Visual alignment */
+}
