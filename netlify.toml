@@ -1,0 +1,9 @@
+[build]
+  command = "corepack enable && corepack prepare pnpm@latest --activate && pnpm build"
+  publish = "dist"
+  functions = ".netlify/functions-internal/server"
+
+[dev]
+  framework = "nuxt"
+
+# Do NOT store secrets here. Add them in Netlify UI or via `netlify env:set`.
